@@ -1,6 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { useEffect, useState } from 'react';
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/Merg_logo.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -31,7 +31,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Merg" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className='navbar-toogler-icon'></span>
@@ -43,12 +43,12 @@ export const NavBar = () => {
             <Nav.Link href="#projects" className={activeLink === "projects" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
           </Nav>
           <span className='navbar-text'>
-            <div className='social-icon'>
-                <a href='#'><img src={navIcon1} alt='' /></a>
-                <a href='#'><img src={navIcon2} alt='' /></a>
-                <a href='#'><img src={navIcon3} alt='' /></a>
+            <div className='social-icon'>// eslint-disable-next-line
+                <a href='#'><img src={navIcon1} alt='' /></a>// eslint-disable-next-line
+                <a href='#'><img src={navIcon2} alt='' /></a> // eslint-disable-next-line
+                <a href='#'><img src={navIcon3} alt='' /></a> // eslint-disable-next-line
             </div>
-            <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+            <button className='vvd' onClick={() => console.log('connect')}><span>Go Play with Eduard</span></button>
           </span>
         </Navbar.Collapse>
       </Container>
